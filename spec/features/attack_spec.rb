@@ -8,9 +8,7 @@ feature 'Attacking' do
     scenario 'attack reduces player 2s points' do
       sign_in_and_play
       click_link 'Attack'
-      player_one = Player.new("Dave")
-      player_two = Player.new("Mittens")
-      player_one.attack(player_two)
-      expect(player_two.hp).to eq 50
+      expect(page).to_not have_content 'Mittens: 60HP'
+      expect(page).to have_content 'Mittens: 50HP'
     end
 end

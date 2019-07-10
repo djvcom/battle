@@ -9,8 +9,8 @@ class Player
     @hp = DEFAULT_HP
   end
 
-  def attack(player)
-    player.hp -= 10
+  def deduct_hp(points)
+    @hp -= points
   end
 
 end
