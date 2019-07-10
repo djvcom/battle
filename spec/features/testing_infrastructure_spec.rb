@@ -1,26 +1,18 @@
 # this is the first test we've been asked to create - just checking the app is correctly
 # rendering the page
 
-feature 'Testing infrastructure' do
-  scenario 'Can run app and check page content' do
-    visit('/')
-    expect(page).to have_content 'Testing infrastructure working!'
-  end
-end
+# feature 'Testing infrastructure' do
+#   scenario 'Can run app and check page content' do
+#     visit('/')
+#     expect(page).to have_content 'Testing infrastructure working!'
+#   end
+# end
 
 # As two Players,
 # So we can play a personalised game of Battle,
 # We want to Start a fight by entering our Names and seeing them
 
-feature 'Enter names' do
-  scenario 'submitting names' do
-    visit('/')
-    fill_in :player_one_name, with: 'Dave'
-    fill_in :player_two_name, with: 'Mittens'
-    click_button 'Submit'
-    expect(page).to have_content 'Dave vs. Mittens'
-  end
-end
+
 
 # As Player 1,
 # So I can see how close I am to winning
