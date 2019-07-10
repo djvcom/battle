@@ -1,3 +1,9 @@
+feature 'Testing infrastructure' do
+  scenario 'Can run app and check page content' do
+    visit('/')
+    expect(page).to have_content 'Testing infrastructure working!'
+  end
+end
 # As two Players,
 # So we can play a personalised game of Battle,
 # We want to Start a fight by entering our Names and seeing them
